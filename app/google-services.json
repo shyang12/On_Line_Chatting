@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "609434556846",
+    "project_id": "on-line-chatting",
+    "storage_bucket": "on-line-chatting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609434556846:android:3ea530f2feaea0f230503f",
+        "android_client_info": {
+          "package_name": "kr.ac.seokyeong.on_line_chatting"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhMGmoFT5uiwZg0UZWZoe8XxqbxA-QWJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
