@@ -12,7 +12,20 @@
           "package_name": "kr.ac.seokyeong.on_line_chatting"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "609434556846-67lsfcvoeb3vm5at2qj99n5q9htoa9tv.apps.googleusercontent.com",
+          "client_type": 3,
+          "android_info": {
+            "package_name": "kr.ac.seokyeong.on_line_chatting",
+            "certificate_hash": "037570744c231c658389eaf6265df7478c375a28"
+          }
+        },
+        {
+          "client_id": "609434556846-rsmbjllst9oe33b0aauidijlmqk5f40u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBhMGmoFT5uiwZg0UZWZoe8XxqbxA-QWJQ"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609434556846-rsmbjllst9oe33b0aauidijlmqk5f40u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
