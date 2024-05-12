@@ -20,8 +20,14 @@
 ```bash
 ├── main
 │   ├── MainActivity.kt
+│   ├── LoginActivity.kt
+│   ├── UserDTO.kt
+│   └── VideoActivity.kt
 ├── ui
 │   ├── layout
+│   │   ├── item_person.xml
+│   │   ├── activity_video.xml
+│   │   ├── activity_login.xml
 │   │   └── activity_main.xml
 ```
 
