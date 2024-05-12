@@ -9,7 +9,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
+import com.google.firebase.firestore.FirebaseFirestore
 import kr.ac.seokyeong.on_line_chatting.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -46,9 +48,18 @@ class LoginActivity : AppCompatActivity() {
             FirebaseAuth.getInstance().signInWithCredential(credential)
                 .addOnCompleteListener { task->
                     if(task.isSuccessful) {
-                        println("로그인 성공!")
+                        saveUserDataToDatabase(task.result!!.user)
                     }
                 }
         }
+    }
+    fun saveUserDataToDatabase(user : FirebaseUser?) {
+        val email = user?.email
+        val uid = user?.uid
+
+        var userDTO = UserDTO()
+        userDTO.email = email
+
+        FirebaseFirestore.getInstance().collection("users").document(uid!!).set(userDTO)
     }
 }
