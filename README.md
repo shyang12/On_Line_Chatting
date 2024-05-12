@@ -3,7 +3,7 @@
  
  - 안드로이드 스튜디오에서 Kotlin을 기반으로 화상 채팅(통화)을 구현하는 프로젝트
 
-`DataBinding` `Firebase` `Firebase-ml-language`
+`DataBinding` `Firebase` `Firestore Database`
 
 ## 1. Co-Development Environment   
 ### 1. 1 Environments
@@ -13,8 +13,8 @@
 - GitHub
 
 ### 1. 2 Implement
-- 카메라를 이용하여 눈 색 변경등 필터 적용
-- Spinner 사용으로 변경
+- 구글 로그인을 통한 User 이메일 출력
+- User 이메일을 터치하여 화상 채팅 수행
 
 ## 2. Project Architecture   
 ```bash
@@ -32,6 +32,18 @@
 ```
 
 ## 3. Firebase   
-### 3.1  firebase
+### 3.1 Authentication
+
+### 3.2 Firestore Database
+```bash
+├── users
+│    ├── channel
+│    └── email
+
+```
 
 ## 4. Result
+- 메인화면 결과
+
+
+- 영상통화 화면
