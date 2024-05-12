@@ -61,5 +61,7 @@ class LoginActivity : AppCompatActivity() {
         userDTO.email = email
 
         FirebaseFirestore.getInstance().collection("users").document(uid!!).set(userDTO)
+        finish()
+        startActivity(Intent(this, MainActivity::class.java))
     }
 }
