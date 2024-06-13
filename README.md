@@ -6,7 +6,7 @@
 `DataBinding` `Firebase` `Firestore Database` `Remotemonster`
 
 ### WARNING!!
-- 현제 Remotemonster 서비스를 카카오에서 중지하여 실행 불가!!
+- 현재 Remotemonster 서비스를 카카오에서 중지하여 실행 불가!!
 
 ## 1. Co-Development Environment   
 ### 1. 1 Environments
